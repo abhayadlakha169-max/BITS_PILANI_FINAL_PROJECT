@@ -1,4 +1,4 @@
-#from src.data_ingestion import DataIngestion
+from src.data_ingestion import DataIngestion
 from src.data_preprocessing import DataProcessor
 from src.model_training import ModelTraining
 from utils.common_functions import read_yaml
