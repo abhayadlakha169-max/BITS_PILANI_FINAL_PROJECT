@@ -7,10 +7,8 @@ from config.paths_config import *
 
 if __name__=="__main__":
     ### 1. Data Ingestion Not working due to GCP ACCESS ISSUE WILL FIX THIS
-    '''
     data_ingestion = DataIngestion(read_yaml(CONFIG_PATH))
     data_ingestion.run()
-    '''
     ### 2. Data Processing
 
     processor = DataProcessor(TRAIN_FILE_PATH,TEST_FILE_PATH,PROCESSED_DIR,CONFIG_PATH)
