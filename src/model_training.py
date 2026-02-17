@@ -13,6 +13,7 @@ from scipy.stats import randint
 
 import mlflow
 import mlflow.sklearn
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
 logger = get_logger(__name__)
 
@@ -123,14 +124,15 @@ class ModelTraining:
     
     def run(self):
         try:
+            mlflow.set_tracking_uri("sqlite:///mlflow.db")
             with mlflow.start_run():
                 logger.info("Starting our Model Training pipeline")
 
                 logger.info("Starting our MLFLOW experimentation")
 
                 logger.info("Logging the training and testing datset to MLFLOW")
-                mlflow.log_artifact(self.train_path , artifact_path="datasets")
-                mlflow.log_artifact(self.test_path , artifact_path="datasets")
+                #mlflow.log_artifact(self.train_path , artifact_path="datasets")
+               # mlflow.log_artifact(self.test_path , artifact_path="datasets")
 
                 X_train,y_train,X_test,y_test =self.load_and_split_data()
                 best_lgbm_model = self.train_lgbm(X_train,y_train)
@@ -138,11 +140,11 @@ class ModelTraining:
                 self.save_model(best_lgbm_model)
 
                 logger.info("Logging the model into MLFLOW")
-                mlflow.log_artifact(self.model_output_path)
+                #mlflow.log_artifact(self.model_output_path)
 
                 logger.info("Logging Params and metrics to MLFLOW")
-                mlflow.log_params(best_lgbm_model.get_params())
-                mlflow.log_metrics(metrics)
+                #mlflow.log_params(best_lgbm_model.get_params())
+               # mlflow.log_metrics(metrics)
 
                 logger.info("Model Training sucesfullly completed")
 
