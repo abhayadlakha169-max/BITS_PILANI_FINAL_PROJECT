@@ -3,7 +3,7 @@ FROM python:slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
     MLFLOW_TRACKING_URI=sqlite:///mlflow.db
 
 # Set the working directory
