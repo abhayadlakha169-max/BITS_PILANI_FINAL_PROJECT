@@ -1,0 +1,16 @@
+[33m4d79788[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: rebase (start): checkout 4d79788
+[33m5717609[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: rebase (abort): returning to refs/heads/main
+[33m5717609[m[33m ([m[1;32mmain[m[33m)[m HEAD@{2}: rebase (abort): returning to refs/heads/main
+[33m5717609[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: reset: moving to 5717609
+[33m4d79788[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{4}: reset: moving to 4d79788
+[33me6076aa[m HEAD@{5}: commit: commit after removal of json file
+[33m5717609[m[33m ([m[1;32mmain[m[33m)[m HEAD@{6}: commit: Removed GCP service account key
+[33m2aebaf9[m HEAD@{7}: commit: commit
+[33m4d79788[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{8}: commit: commit
+[33m88d23a7[m HEAD@{9}: commit (merge): Resolved merge conflict in README
+[33m9b5a292[m HEAD@{10}: commit: COMMIT
+[33m08f332b[m HEAD@{11}: Branch: renamed refs/heads/main to refs/heads/main
+[33m08f332b[m HEAD@{13}: commit: Remove unwanted files and update .gitignore
+[33m9e6ab1c[m HEAD@{14}: commit (merge): Finish merge
+[33me865231[m HEAD@{15}: Branch: renamed refs/heads/main to refs/heads/main
+[33me865231[m HEAD@{17}: commit (initial): Pushing files to git
