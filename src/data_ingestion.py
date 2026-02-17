@@ -1,4 +1,5 @@
 import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Project\BITS_PILANI_FINAL_YEAR_PROJECT\project-0be88e2b-1c0d-4f48-b41-b1cfc07c6de1.json"
 import pandas as pd
 from google.cloud import storage
 from sklearn.model_selection import train_test_split

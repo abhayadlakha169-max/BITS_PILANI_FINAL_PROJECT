@@ -2,3 +2,4 @@ venv/
 mlruns/
 logs/
 FINAL_YEAR_PROJECT.egg-info/
+*.json/
